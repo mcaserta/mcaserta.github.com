@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mirko Caserta</title>
+  <title>Clustering Issues? - Mirko Caserta</title>
   <meta name="author" content="Mirko Caserta">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mcaserta.github.com/">
+  <link rel="canonical" href="http://mcaserta.github.com/blog/2012/09/24/clustering-issues/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,15 +68,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/09/24/clustering-issues/">Clustering Issues?</a></h1>
+      <h1 class="entry-title">Clustering Issues?</h1>
     
     
       <p class="meta">
@@ -99,7 +96,7 @@
   </header>
 
 
-  <div class="entry-content"><p>The number one culprit for a non working cluster is a misconfigured /etc/hosts file. This is because of how some software implementation announces its availability on the network. Typically, if you have a resolver configured so that the domain name of your local node points to the loopback address, you have a problem.</p>
+<div class="entry-content"><p>The number one culprit for a non working cluster is a misconfigured /etc/hosts file. This is because of how some software implementation announces its availability on the network. Typically, if you have a resolver configured so that the domain name of your local node points to the loopback address, you have a problem.</p>
 
 <p>Some Linux distributions (Ubuntu, I’m looking at you!) ship with an /etc/hosts that looks like this (supposing the hostname is cat and the domain name is foo.bar):</p>
 
@@ -114,64 +111,16 @@
 
 <p>The solution is to get rid of the 127.0.1.1 line. You’re welcome.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/27/spring-crypto-utils-1.3.0/">Spring Crypto Utils 1.3.0</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Mirko Caserta</span></span>
 
-<time datetime="2012-08-27T14:47:00+02:00" pubdate data-updated="true">Aug 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I’ve released a new version of Spring Crypto Utils. The project now has a gorgeous, shiny, sleek, new website on the <a href="http://springcryptoutils.com" title="Spring Crypto Utils">springcryptoutils.com</a> domain. The website is made possible thanks to the kind folks at <a href="https://github.com/" title="GitHub">GitHub</a> and their <a href="http://pages.github.com/" title="GitHub Pages">GitHub pages</a> hosting facility.</p>
-
-<p>Please read the notes in the <a href="http://springcryptoutils.com/changelog.html" title="Spring Crypto Utils: ChangeLog">changelog</a> if you’re upgrading.</p>
-
-<p>I must say moving to GitHub was a smart move since contributing to the project is very much easier now thanks to git pull requests. I would like to thank Chad Johnston and Martin Bosak for their contributions: respectively, <a href="https://github.com/mcaserta/spring-crypto-utils/commit/b0c7e8dab8c3f9ead869055aa460feb0dc5af4f6">the certificate element</a> and the <a href="https://github.com/mcaserta/spring-crypto-utils/commit/15f305e522bd3c85eec7cc46a50e18385f324b9e">provider attribute</a>.</p>
-
-<p>I hope users will find the documentation easier to read. Here is an example regarding <a href="http://springcryptoutils.com/signature-m.html">digital signatures with runtime selection of multiple keys</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Carl Sagan, Lo Scetticismo E l&#8217;Ingegneria Del Software</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -183,82 +132,49 @@
   
 
 
-<time datetime="2012-05-25T14:47:00+02:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ieri sera leggevo <a href="http://www.brainpickings.org/index.php/2012/05/23/carl-sagan-the-burden-of-skepticism/" title="Carl Sagan on Mastering the Vital Balance of Skepticism and Openness">questo articolo</a> in cui viene citato Carl Sagan, probabilmente il migliore divulgatore scientifico mai vissuto sul pianeta Terra.</p>
-
-<p>Sagan dice, con parole molto più efficaci delle mie, che esiste un delicato equilibrio fra scetticismo ed apertura mentale nell’affrontare ipotesi e idee. Leggendo il suo ragionamento mi sono reso conto che questa faccenda del giusto equilibrio è applicabile a tanti campi della conoscenza umana, fra cui l’Ingegneria del Software.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2012-09-24T14:47:00+02:00" pubdate data-updated="true">Sep 24<span>th</span>, 2012</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/">Cosa Crea Una Buona Cultura Ingegneristica?</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/clustering/'>clustering</a>, <a class='category' href='/blog/categories/computer/'>computer</a>, <a class='category' href='/blog/categories/posts-in-english/'>posts in english</a>, <a class='category' href='/blog/categories/software/'>software</a>, <a class='category' href='/blog/categories/troubleshooting/'>troubleshooting</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
+  
+</span>
 
 
-<time datetime="2012-05-20T14:47:00+02:00" pubdate data-updated="true">May 20<span>th</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mcaserta.github.com/blog/2012/09/24/clustering-issues/" data-via="mirkocaserta" data-counturl="http://mcaserta.github.com/blog/2012/09/24/clustering-issues/" >Tweet</a>
+  
+  
+  
+</div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/08/27/spring-crypto-utils-1.3.0/" title="Previous Post: Spring Crypto Utils 1.3.0">&laquo; Spring Crypto Utils 1.3.0</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-  <div class="entry-content"><p>Stavo leggendo <a href="http://www.quora.com/What-makes-a-good-engineering-culture/answer/Edmond-Lau" title="What makes a good engineering culture?">la risposta di Edmond Lau’s alla domanda “Cosa crea una buona cultura ingegneristica?”</a></p>
-
-<p>Tutti i punti esposti sono molto interessanti e validi. Tuttavia, nella mia esperienza, due punti sono prerequisito essenziale per il senso più ampio del discorso:</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
   <h1>About</h1>
-  <p>Welcome to my digital home. My name is Mirko and I&#8217;m a software craftsman based in Rome, Italy.</p>
+  <p>Welcome to my digital home. My name is Mirko and I'm a software craftsman based in Rome, Italy.</p>
 </section>
 <section>
   <h1>Recent Posts</h1>
@@ -273,7 +189,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Carl Sagan, lo Scetticismo e l&#8217;Ingegneria del Software</a>
+        <a href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Carl Sagan, lo Scetticismo e l'Ingegneria del Software</a>
       </li>
     
       <li class="post">
@@ -286,7 +202,7 @@
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -303,7 +219,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/mcaserta">@mcaserta</a> on GitHub
@@ -333,6 +249,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -347,7 +264,10 @@
       var disqus_shortname = 'mcaserta';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mcaserta.github.com/blog/2012/09/24/clustering-issues/';
+        var disqus_url = 'http://mcaserta.github.com/blog/2012/09/24/clustering-issues/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

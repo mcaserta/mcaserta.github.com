@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cryptography | Mirko Caserta]]></title>
+  <link href="http://mcaserta.github.com/blog/categories/cryptography/atom.xml" rel="self"/>
+  <link href="http://mcaserta.github.com/"/>
+  <updated>2012-10-19T20:31:16+02:00</updated>
+  <id>http://mcaserta.github.com/</id>
+  <author>
+    <name><![CDATA[Mirko Caserta]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Spring Crypto Utils 1.3.0]]></title>
+    <link href="http://mcaserta.github.com/blog/2012/08/27/spring-crypto-utils-1.3.0/"/>
+    <updated>2012-08-27T14:47:00+02:00</updated>
+    <id>http://mcaserta.github.com/blog/2012/08/27/spring-crypto-utils-1.3.0</id>
+    <content type="html"><![CDATA[<p>I’ve released a new version of Spring Crypto Utils. The project now has a gorgeous, shiny, sleek, new website on the <a href="http://springcryptoutils.com" title="Spring Crypto Utils">springcryptoutils.com</a> domain. The website is made possible thanks to the kind folks at <a href="https://github.com/" title="GitHub">GitHub</a> and their <a href="http://pages.github.com/" title="GitHub Pages">GitHub pages</a> hosting facility.</p>
+
+<p>Please read the notes in the <a href="http://springcryptoutils.com/changelog.html" title="Spring Crypto Utils: ChangeLog">changelog</a> if you’re upgrading.</p>
+
+<p>I must say moving to GitHub was a smart move since contributing to the project is very much easier now thanks to git pull requests. I would like to thank Chad Johnston and Martin Bosak for their contributions: respectively, <a href="https://github.com/mcaserta/spring-crypto-utils/commit/b0c7e8dab8c3f9ead869055aa460feb0dc5af4f6">the certificate element</a> and the <a href="https://github.com/mcaserta/spring-crypto-utils/commit/15f305e522bd3c85eec7cc46a50e18385f324b9e">provider attribute</a>.</p>
+
+<p>I hope users will find the documentation easier to read. Here is an example regarding <a href="http://springcryptoutils.com/signature-m.html">digital signatures with runtime selection of multiple keys</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
