@@ -4,7 +4,7 @@
   <title><![CDATA[Category: post in italiano | Mirko Caserta]]></title>
   <link href="http://mcaserta.github.com/blog/categories/post-in-italiano/atom.xml" rel="self"/>
   <link href="http://mcaserta.github.com/"/>
-  <updated>2012-10-19T20:31:16+02:00</updated>
+  <updated>2012-10-30T14:16:55+01:00</updated>
   <id>http://mcaserta.github.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Video Tutorial]]></title>
+    <link href="http://mcaserta.github.com/blog/2012/10/30/video-tutorial/"/>
+    <updated>2012-10-30T13:47:00+01:00</updated>
+    <id>http://mcaserta.github.com/blog/2012/10/30/video-tutorial</id>
+    <content type="html"><![CDATA[<p>Dallo scorso settembre faccio parte di <a href="http://swat.nexse.com" title="Nexse SWAT Team">un gruppo</a> interno all'azienda per cui lavoro in cui ci occupiamo di architettura del software. Uno dei nostri compiti è quello di individuare strumenti e tecnologie su cui standardizzare il processo di produzione del software e contribuirne alla diffusione.</p>
+
+<p>Uno dei modi per diffondere innovazione è rappresentato dai nostri <a href="https://vimeo.com/nexse/">video tutorial</a>. Ora non saremo né gli Oliver Stone dei video tutorial, né gli Alan Turing dell'informatica ma, per quanto ne sappiamo, non ci sono altre aziende in Italia che pubblicano gratuitamente video in cui vengono spiegati tecnologie e strumenti realmente impiegati nel lavoro quotidiano di produzione di software professionale. Personalmente credo sia una iniziativa meritevole se non altro di maggiore pubblicità sui social media.</p>
+
+<p>Se guardi uno dei nostri video e lo trovi utile, segnalalo ai tuoi amici, colleghi, a voce, sui social network, ecc.</p>
+
+<p>Per praticità, ecco un elenco dei video tutorial pubblicati finora:</p>
+
+<ul>
+<li>Introduzione a Maven: <a href="https://vimeo.com/42969878">prima</a>, <a href="https://vimeo.com/43922430">seconda</a> e <a href="https://vimeo.com/51743348">terza</a> puntata</li>
+<li><a href="https://vimeo.com/51150779">Introduzione a Spring Data</a></li>
+<li><a href="https://vimeo.com/38038686">Introduzione a Spring Roo</a></li>
+<li><a href="https://vimeo.com/39395290">Single Page Application con ExtJS</a></li>
+<li><a href="https://vimeo.com/35209134">Java Debugging con Intellij Idea</a></li>
+<li><a href="https://vimeo.com/30879185">Continuous Integration e Code Metrics con Jenkins e Sonar</a></li>
+</ul>
+
+
+<p>Buona visione.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Carl Sagan, lo Scetticismo e l'Ingegneria del Software]]></title>
