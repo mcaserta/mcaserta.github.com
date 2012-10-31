@@ -4,7 +4,7 @@
   <title><![CDATA[Mirko Caserta]]></title>
   <link href="http://mcaserta.github.com/atom.xml" rel="self"/>
   <link href="http://mcaserta.github.com/"/>
-  <updated>2012-10-30T14:16:55+01:00</updated>
+  <updated>2012-10-31T12:04:03+01:00</updated>
   <id>http://mcaserta.github.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Scala World!]]></title>
+    <link href="http://mcaserta.github.com/blog/2012/10/31/hello-scala-world/"/>
+    <updated>2012-10-31T11:57:00+01:00</updated>
+    <id>http://mcaserta.github.com/blog/2012/10/31/hello-scala-world</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve just published an <a href="https://github.com/mcaserta/hello-scala-world" title="Hello Scala World!">Hello Scala World! project on GitHub</a> that you can use to quickly setup a Scala hacking environment. This is particularly useful if you run Intellij Idea with the Scala plugin since simply opening the pom as a project will get you all the comforts you would expect in a modern ide.</p>
+
+<p>You also get support for running <a href="http://etorreborre.github.com/specs2/">specs2 specifications</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Video Tutorial]]></title>
