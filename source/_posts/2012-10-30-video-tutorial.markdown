@@ -19,6 +19,7 @@ Se guardi uno dei nostri video e lo trovi utile, segnalalo ai tuoi amici, colleg
 
 Per praticità, ecco un elenco dei video tutorial pubblicati finora:
 
+* Introduzione a JavaScript per Single Page Application: <a href="http://vimeo.com/56987148">prima</a>, <a href="http://vimeo.com/57212911">seconda</a> e <a href="http://vimeo.com/57379338">terza</a> puntata
 * Introduzione a Maven: <a href="https://vimeo.com/42969878">prima</a>, <a href="https://vimeo.com/43922430">seconda</a> e <a href="https://vimeo.com/51743348">terza</a> puntata
 * <a href="https://vimeo.com/51150779">Introduzione a Spring Data</a>
 * <a href="https://vimeo.com/38038686">Introduzione a Spring Roo</a>
