@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tutorial | Mirko Caserta]]></title>
   <link href="http://mcaserta.github.com/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://mcaserta.github.com/"/>
-  <updated>2012-10-31T12:04:03+01:00</updated>
+  <updated>2013-02-23T14:54:11+01:00</updated>
   <id>http://mcaserta.github.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
@@ -27,6 +27,7 @@
 <p>Per praticità, ecco un elenco dei video tutorial pubblicati finora:</p>
 
 <ul>
+<li>Introduzione a JavaScript per Single Page Application: <a href="http://vimeo.com/56987148">prima</a>, <a href="http://vimeo.com/57212911">seconda</a> e <a href="http://vimeo.com/57379338">terza</a> puntata</li>
 <li>Introduzione a Maven: <a href="https://vimeo.com/42969878">prima</a>, <a href="https://vimeo.com/43922430">seconda</a> e <a href="https://vimeo.com/51743348">terza</a> puntata</li>
 <li><a href="https://vimeo.com/51150779">Introduzione a Spring Data</a></li>
 <li><a href="https://vimeo.com/38038686">Introduzione a Spring Roo</a></li>

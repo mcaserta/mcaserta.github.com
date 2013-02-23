@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software | Mirko Caserta]]></title>
   <link href="http://mcaserta.github.com/blog/categories/software/atom.xml" rel="self"/>
   <link href="http://mcaserta.github.com/"/>
-  <updated>2012-10-31T12:04:03+01:00</updated>
+  <updated>2013-02-23T14:54:11+01:00</updated>
   <id>http://mcaserta.github.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SBT Company Wide Settings Example]]></title>
+    <link href="http://mcaserta.github.com/blog/2013/02/23/sbt-bom-example/"/>
+    <updated>2013-02-23T14:29:00+01:00</updated>
+    <id>http://mcaserta.github.com/blog/2013/02/23/sbt-bom-example</id>
+    <content type="html"><![CDATA[<p>I know it looks like I haven't been posting much lately. Anyway, I'm studying <a href="http://www.scala-lang.org/">Scala</a> programming and, among other things, I came upon the awesome <a href="http://www.scala-sbt.org/">Simple Build Tool</a> (SBT for short).</p>
+
+<p>SBT looks like a mighty and untamable beast at first glance. But, after a closer look and a patient walkthrough of the <a href="http://www.scala-sbt.org/release/docs/index.html">online docs</a> and the practical examples, I must say it is an awesome tool, very worth the learning effort.</p>
+
+<p>One of the first issues I had to face in SBT was implementing what I was previously doing with a <a href="http://code.google.com/p/m4enterprise/wiki/CorporatePOM">Maven Corporate POM</a>. In other words, I needed a mechanism to control the master build settings for all of a company's artifacts.</p>
+
+<p>I ended up publishing an <a href="https://github.com/mcaserta/sbt-bom-example" title="SBT Company Wide Settings Example">SBT Company Wide Settings Example project on GitHub</a>. There is an extensive <a href="https://github.com/mcaserta/sbt-bom-example/blob/master/README.markdown">readme</a> that explains how I am doing it.</p>
+
+<p>As usual, feedback is welcome.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello Scala World!]]></title>
@@ -38,6 +55,7 @@
 <p>Per praticità, ecco un elenco dei video tutorial pubblicati finora:</p>
 
 <ul>
+<li>Introduzione a JavaScript per Single Page Application: <a href="http://vimeo.com/56987148">prima</a>, <a href="http://vimeo.com/57212911">seconda</a> e <a href="http://vimeo.com/57379338">terza</a> puntata</li>
 <li>Introduzione a Maven: <a href="https://vimeo.com/42969878">prima</a>, <a href="https://vimeo.com/43922430">seconda</a> e <a href="https://vimeo.com/51743348">terza</a> puntata</li>
 <li><a href="https://vimeo.com/51150779">Introduzione a Spring Data</a></li>
 <li><a href="https://vimeo.com/38038686">Introduzione a Spring Roo</a></li>
