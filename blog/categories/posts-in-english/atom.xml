@@ -4,7 +4,7 @@
   <title><![CDATA[Category: posts in english | Mirko Caserta]]></title>
   <link href="http://mcaserta.github.com/blog/categories/posts-in-english/atom.xml" rel="self"/>
   <link href="http://mcaserta.github.com/"/>
-  <updated>2013-03-09T14:55:25+01:00</updated>
+  <updated>2013-03-09T15:13:57+01:00</updated>
   <id>http://mcaserta.github.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
@@ -18,10 +18,9 @@
     <link href="http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/"/>
     <updated>2013-03-09T14:29:00+01:00</updated>
     <id>http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup</id>
-    <content type="html"><![CDATA[<p>I quite like OS X <a
-href="http://en.wikipedia.org/wiki/Launchpad_(OS_X)">Launchpad</a>. The
-only problem is it gets quite messy after a while. The way I fix it is
-by spraying napalm over its cache and restarting the dock:</p>
+    <content type="html"><![CDATA[<p>I quite like OS X Launchpad. The only problem is it gets quite messy
+after a while. The way I fix it is by spraying napalm over its cache and
+restarting the dock:</p>
 
 <p><code>bash Clean up Launchpad
 $ rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KILL Dock
