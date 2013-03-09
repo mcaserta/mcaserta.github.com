@@ -11,10 +11,9 @@ categories:
   - launchpad
   - posts in english
 ---
-I quite like OS X <a
-href="http://en.wikipedia.org/wiki/Launchpad_(OS_X)">Launchpad</a>. The
-only problem is it gets quite messy after a while. The way I fix it is
-by spraying napalm over its cache and restarting the dock:
+I quite like OS X Launchpad. The only problem is it gets quite messy
+after a while. The way I fix it is by spraying napalm over its cache and
+restarting the dock:
 
 ``` bash Clean up Launchpad
 $ rm ~/Library/Application\ Support/Dock/*.db && killall -KILL Dock
