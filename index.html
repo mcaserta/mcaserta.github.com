@@ -9,7 +9,9 @@
   <meta name="author" content="Mirko Caserta">
 
   
-  <meta name="description" content="I know it looks like I haven&#8217;t been posting much lately. Anyway, I&#8217;m studying Scala programming and, among other things, I came upon the &hellip;">
+  <meta name="description" content="I quite like OS X <a
+href="http://en.wikipedia.org/wiki/Launchpad_(OS_X)">Launchpad. The
+only problem is it gets quite messy after a while. The way I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +72,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/09/os-x-launchpad-cleanup/">OS X Launchpad Clean Up</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T14:29:00+01:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I quite like OS X <a
+href="http://en.wikipedia.org/wiki/Launchpad_(OS_X)">Launchpad</a>. The
+only problem is it gets quite messy after a while. The way I fix it is
+by spraying napalm over its cache and restarting the dock:</p>
+
+<figure class='code'><figcaption><span>Clean up Launchpad</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm ~/Library/Application<span class="se">\ </span>Support/Dock/*.db <span class="o">&amp;&amp;</span> killall -KILL Dock
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I use this command so often that I have an alias for it:</p>
+
+<figure class='code'><figcaption><span>Clean up Launchpad shell alias</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">alias </span><span class="nv">culp</span><span class="o">=</span><span class="s1">&#39;rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KILL Dock&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <code>alias</code> command should work both in bash and zsh. My mnemonic for
+<code>culp</code> is Clean Up Launch Pad.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -402,6 +458,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/09/os-x-launchpad-cleanup/">OS X Launchpad Clean Up</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/23/sbt-bom-example/">SBT Company Wide Settings Example</a>
       </li>
     
@@ -415,10 +475,6 @@
     
       <li class="post">
         <a href="/blog/2012/09/24/clustering-issues/">Clustering Issues?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/27/spring-crypto-utils-1.3.0/">Spring Crypto Utils 1.3.0</a>
       </li>
     
   </ul>

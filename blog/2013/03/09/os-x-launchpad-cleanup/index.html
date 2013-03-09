@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: scienza - Mirko Caserta</title>
+  <title>OS X Launchpad Clean Up - Mirko Caserta</title>
   <meta name="author" content="Mirko Caserta">
 
   
-  <meta name="description" content="Category: scienza">
+  <meta name="description" content="I quite like OS X <a
+href="http://en.wikipedia.org/wiki/Launchpad_(OS_X)">Launchpad. The
+only problem is it gets quite messy after a while. The way I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mcaserta.github.comblog/categories/scienza/">
+  <link rel="canonical" href="http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,50 +71,109 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Scienza</h1>
+    
+      <h1 class="entry-title">OS X Launchpad Clean Up</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T14:29:00+01:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>I quite like OS X <a
+href="http://en.wikipedia.org/wiki/Launchpad_(OS_X)">Launchpad</a>. The
+only problem is it gets quite messy after a while. The way I fix it is
+by spraying napalm over its cache and restarting the dock:</p>
 
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Carl Sagan, lo Scetticismo e l'Ingegneria del Software</a></h1>
-<time datetime="2012-05-25T14:47:00+02:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/computer/'>computer</a>, <a class='category' href='/blog/categories/ingegneria-del-software/'>ingegneria del software</a>, <a class='category' href='/blog/categories/post-in-italiano/'>post in italiano</a>, <a class='category' href='/blog/categories/scienza/'>scienza</a></span>
-</footer>
+<figure class='code'><figcaption><span>Clean up Launchpad</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm ~/Library/Application<span class="se">\ </span>Support/Dock/*.db <span class="o">&amp;&amp;</span> killall -KILL Dock
+</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>I use this command so often that I have an alias for it:</p>
+
+<figure class='code'><figcaption><span>Clean up Launchpad shell alias</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">alias </span><span class="nv">culp</span><span class="o">=</span><span class="s1">&#39;rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KILL Dock&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-
-<article>
-  
-<h1><a href="/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/">Cosa crea una buona cultura ingegneristica?</a></h1>
-<time datetime="2012-05-20T14:47:00+02:00" pubdate><span class='month'>May</span> <span class='day'>20</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/computer/'>computer</a>, <a class='category' href='/blog/categories/ingegneria-del-software/'>ingegneria del software</a>, <a class='category' href='/blog/categories/post-in-italiano/'>post in italiano</a>, <a class='category' href='/blog/categories/scienza/'>scienza</a></span>
-</footer>
-
-
-</article>
-
+<p>The <code>alias</code> command should work both in bash and zsh. My mnemonic for
+<code>culp</code> is Clean Up Launch Pad.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Mirko Caserta</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T14:29:00+01:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/computer/'>computer</a>, <a class='category' href='/blog/categories/launchpad/'>launchpad</a>, <a class='category' href='/blog/categories/mac/'>mac</a>, <a class='category' href='/blog/categories/osx/'>osx</a>, <a class='category' href='/blog/categories/posts-in-english/'>posts in english</a>, <a class='category' href='/blog/categories/software/'>software</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/" data-via="mirkocaserta" data-counturl="http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/23/sbt-bom-example/" title="Previous Post: SBT Company Wide Settings Example">&laquo; SBT Company Wide Settings Example</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -214,7 +275,10 @@
       var disqus_shortname = 'mcaserta';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/';
+        var disqus_url = 'http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
