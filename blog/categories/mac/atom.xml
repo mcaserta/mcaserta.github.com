@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: mac | Mirko Caserta]]></title>
-  <link href="http://mcaserta.github.com/blog/categories/mac/atom.xml" rel="self"/>
-  <link href="http://mcaserta.github.com/"/>
-  <updated>2013-03-09T15:13:57+01:00</updated>
-  <id>http://mcaserta.github.com/</id>
+  <link href="http://mirkocaserta.com/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://mirkocaserta.com/"/>
+  <updated>2013-03-19T13:20:09+01:00</updated>
+  <id>http://mirkocaserta.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[OS X Launchpad Clean Up]]></title>
-    <link href="http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/"/>
+    <link href="http://mirkocaserta.com/blog/2013/03/09/os-x-launchpad-cleanup/"/>
     <updated>2013-03-09T14:29:00+01:00</updated>
-    <id>http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup</id>
+    <id>http://mirkocaserta.com/blog/2013/03/09/os-x-launchpad-cleanup</id>
     <content type="html"><![CDATA[<p>I quite like OS X Launchpad. The only problem is it gets quite messy
 after a while. The way I fix it is by spraying napalm over its cache and
 restarting the dock:</p>

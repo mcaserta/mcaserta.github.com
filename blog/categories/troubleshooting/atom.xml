@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: troubleshooting | Mirko Caserta]]></title>
-  <link href="http://mcaserta.github.com/blog/categories/troubleshooting/atom.xml" rel="self"/>
-  <link href="http://mcaserta.github.com/"/>
-  <updated>2013-03-09T15:13:57+01:00</updated>
-  <id>http://mcaserta.github.com/</id>
+  <link href="http://mirkocaserta.com/blog/categories/troubleshooting/atom.xml" rel="self"/>
+  <link href="http://mirkocaserta.com/"/>
+  <updated>2013-03-19T13:20:09+01:00</updated>
+  <id>http://mirkocaserta.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Clustering Issues?]]></title>
-    <link href="http://mcaserta.github.com/blog/2012/09/24/clustering-issues/"/>
+    <link href="http://mirkocaserta.com/blog/2012/09/24/clustering-issues/"/>
     <updated>2012-09-24T14:47:00+02:00</updated>
-    <id>http://mcaserta.github.com/blog/2012/09/24/clustering-issues</id>
+    <id>http://mirkocaserta.com/blog/2012/09/24/clustering-issues</id>
     <content type="html"><![CDATA[<p>The number one culprit for a non working cluster is a misconfigured /etc/hosts file. This is because of how some software implementation announces its availability on the network. Typically, if you have a resolver configured so that the domain name of your local node points to the loopback address, you have a problem.</p>
 
 <p>Some Linux distributions (Ubuntu, I’m looking at you!) ship with an /etc/hosts that looks like this (supposing the hostname is cat and the domain name is foo.bar):</p>

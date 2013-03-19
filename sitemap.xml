@@ -2,54 +2,52 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://mcaserta.github.com/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/
+            http://mirkocaserta.com/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/
         </loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://mcaserta.github.com/blog/2012/05/25/sagan-scetticismo-ingegneria-software/
-        </loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2012/05/25/sagan-scetticismo-ingegneria-software/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/2012/08/27/spring-crypto-utils-1.3.0/</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2012/08/27/spring-crypto-utils-1.3.0/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/2012/09/24/clustering-issues/</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2012/09/24/clustering-issues/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/2012/10/30/video-tutorial/</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2012/10/30/video-tutorial/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/2012/10/31/hello-scala-world/</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2012/10/31/hello-scala-world/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/2013/02/23/sbt-bom-example/</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2013/02/23/sbt-bom-example/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/2013/03/09/os-x-launchpad-cleanup/</loc>
-        <lastmod>2013-03-09T15:12:36+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/2013/03/09/os-x-launchpad-cleanup/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/blog/archives/</loc>
-        <lastmod>2013-03-09T15:12:36+01:00</lastmod>
+        <loc>http://mirkocaserta.com/blog/archives/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/booklet/</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/booklet/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/</loc>
-        <lastmod>2013-03-09T15:12:36+01:00</lastmod>
+        <loc>http://mirkocaserta.com/</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
     <url>
-        <loc>http://mcaserta.github.com/robots.txt</loc>
-        <lastmod>2013-03-09T15:03:26+01:00</lastmod>
+        <loc>http://mirkocaserta.com/robots.txt</loc>
+        <lastmod>2013-03-19T12:25:36+01:00</lastmod>
     </url>
 </urlset>

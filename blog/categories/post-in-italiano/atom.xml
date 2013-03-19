@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: post in italiano | Mirko Caserta]]></title>
-  <link href="http://mcaserta.github.com/blog/categories/post-in-italiano/atom.xml" rel="self"/>
-  <link href="http://mcaserta.github.com/"/>
-  <updated>2013-03-09T15:13:57+01:00</updated>
-  <id>http://mcaserta.github.com/</id>
+  <link href="http://mirkocaserta.com/blog/categories/post-in-italiano/atom.xml" rel="self"/>
+  <link href="http://mirkocaserta.com/"/>
+  <updated>2013-03-19T13:20:09+01:00</updated>
+  <id>http://mirkocaserta.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Video Tutorial]]></title>
-    <link href="http://mcaserta.github.com/blog/2012/10/30/video-tutorial/"/>
+    <link href="http://mirkocaserta.com/blog/2012/10/30/video-tutorial/"/>
     <updated>2012-10-30T13:47:00+01:00</updated>
-    <id>http://mcaserta.github.com/blog/2012/10/30/video-tutorial</id>
+    <id>http://mirkocaserta.com/blog/2012/10/30/video-tutorial</id>
     <content type="html"><![CDATA[<p>Dallo scorso settembre faccio parte di <a href="http://swat.nexse.com" title="Nexse SWAT Team">un gruppo</a> interno all'azienda per cui lavoro in cui ci occupiamo di architettura del software. Uno dei nostri compiti è quello di individuare strumenti e tecnologie su cui standardizzare il processo di produzione del software e contribuirne alla diffusione.</p>
 
 <p>Uno dei modi per diffondere innovazione è rappresentato dai nostri <a href="https://vimeo.com/nexse/">video tutorial</a>. Ora non saremo né gli Oliver Stone dei video tutorial, né gli Alan Turing dell'informatica ma, per quanto ne sappiamo, non ci sono altre aziende in Italia che pubblicano gratuitamente video in cui vengono spiegati tecnologie e strumenti realmente impiegati nel lavoro quotidiano di produzione di software professionale. Personalmente credo sia una iniziativa meritevole se non altro di maggiore pubblicità sui social media.</p>
@@ -43,9 +43,9 @@
   
   <entry>
     <title type="html"><![CDATA[Carl Sagan, lo Scetticismo e l'Ingegneria del Software]]></title>
-    <link href="http://mcaserta.github.com/blog/2012/05/25/sagan-scetticismo-ingegneria-software/"/>
+    <link href="http://mirkocaserta.com/blog/2012/05/25/sagan-scetticismo-ingegneria-software/"/>
     <updated>2012-05-25T14:47:00+02:00</updated>
-    <id>http://mcaserta.github.com/blog/2012/05/25/sagan-scetticismo-ingegneria-software</id>
+    <id>http://mirkocaserta.com/blog/2012/05/25/sagan-scetticismo-ingegneria-software</id>
     <content type="html"><![CDATA[<p>Ieri sera leggevo <a href="http://www.brainpickings.org/index.php/2012/05/23/carl-sagan-the-burden-of-skepticism/" title="Carl Sagan on Mastering the Vital Balance of Skepticism and Openness">questo articolo</a> in cui viene citato Carl Sagan, probabilmente il migliore divulgatore scientifico mai vissuto sul pianeta Terra.</p>
 
 <p>Sagan dice, con parole molto più efficaci delle mie, che esiste un delicato equilibrio fra scetticismo ed apertura mentale nell’affrontare ipotesi e idee. Leggendo il suo ragionamento mi sono reso conto che questa faccenda del giusto equilibrio è applicabile a tanti campi della conoscenza umana, fra cui l’Ingegneria del Software.</p>
@@ -73,9 +73,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cosa crea una buona cultura ingegneristica?]]></title>
-    <link href="http://mcaserta.github.com/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/"/>
+    <link href="http://mirkocaserta.com/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/"/>
     <updated>2012-05-20T14:47:00+02:00</updated>
-    <id>http://mcaserta.github.com/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica</id>
+    <id>http://mirkocaserta.com/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica</id>
     <content type="html"><![CDATA[<p>Stavo leggendo <a href="http://www.quora.com/What-makes-a-good-engineering-culture/answer/Edmond-Lau" title="What makes a good engineering culture?">la risposta di Edmond Lau’s alla domanda “Cosa crea una buona cultura ingegneristica?”</a></p>
 
 <p>Tutti i punti esposti sono molto interessanti e validi. Tuttavia, nella mia esperienza, due punti sono prerequisito essenziale per il senso più ampio del discorso:</p>
