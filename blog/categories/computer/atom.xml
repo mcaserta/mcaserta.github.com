@@ -4,7 +4,7 @@
   <title><![CDATA[Category: computer | Mirko Caserta]]></title>
   <link href="http://mirkocaserta.com/blog/categories/computer/atom.xml" rel="self"/>
   <link href="http://mirkocaserta.com/"/>
-  <updated>2013-03-19T13:20:09+01:00</updated>
+  <updated>2013-04-17T13:20:08+02:00</updated>
   <id>http://mirkocaserta.com/</id>
   <author>
     <name><![CDATA[Mirko Caserta]]></name>
@@ -12,6 +12,185 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[An Introduction to Time Representation, Serialization and Management in Software]]></title>
+    <link href="http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management/"/>
+    <updated>2013-04-15T14:19:00+02:00</updated>
+    <id>http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management</id>
+    <content type="html"><![CDATA[<p>Most issues in software development usually arise from poor,
+inconsistent knowledge of the domain at hand. A topic apparently as
+simple as time representation, serialization and management can easily
+cause a number of problems both to the neophyte and to the experienced
+programmer.</p>
+
+<p>In this post, we'll see that there's no need to be a
+<a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the
+very simple few concepts needed not to incur into time management hell.</p>
+
+<p><img src="images/blog/time.jpeg" width="500" height="341"></p>
+
+<h2>Representation</h2>
+
+<p>A question as simple as <em>"What time is it?"</em> underlies a number of
+contextual subleties that are obvious to the human brain, but become
+absolute nonsense for a computer.</p>
+
+<p>For instance, if you were asking to me the above question right now, I
+might say: <em>"It's 3:39"</em> and, if you were a colleague in my office,
+that'd be enough information to infer that it's 3:39pm CEST. That's
+because you would already be in possession of some bits of important
+contextual information such as</p>
+
+<ul>
+<li>it's an afternoon because we've already had lunch</li>
+<li>we're in Rome, therefore our timezone is Central European Time (CET)
+or Central European Summer Time (CEST)</li>
+<li>we've switched to daylight savings time a few weeks earlier so, the
+current timezone must be Central European Summer Time</li>
+</ul>
+
+
+<p><em>3:39</em> only happens to be a convenient representation of time as long as
+we're in possession of the contextual bits.  In order to represent time
+in an universal way, you should have an idea what
+<a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a> and
+<a href="http://en.wikipedia.org/wiki/Time_zone">timezones</a> are.</p>
+
+<p>Now, suppose I have to schedule a skype chat with a fellow software
+developer in the US. I could write him an email and say something along
+the lines of <em>"see you on 2/3"</em>. In Italy, that would be the second day
+of the month of march, but to an US person, that would be the third day
+of the month of february. As you can see, how our chat is never going to
+happen.</p>
+
+<p>These are only a few examples of the kind of issues that might arise
+when representing date and time information. Luckily enough, there is a
+solution to the representation conundrums, namely the
+<a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> standard.</p>
+
+<p>Just to give you an example, in ISO 8601, <code>1994-11-05T08:15:30-05:00</code>
+corresponds to November 5, 1994, 8:15:30 am, US Eastern Standard Time.
+<code>1994-11-05T13:15:30Z</code> corresponds to the same instant (the <code>Z</code> stands
+for UTC). Same instant, different representations.</p>
+
+<p>The ISO 8601 standard also has the nice side effect of providing natural
+sorting in systems that use lexicographical order (such as filesystems)
+because information is organized from most to least significant, i.e.
+year, month, day, hour, minute, second, fraction of second.</p>
+
+<p>Even if you're only dealing with local times in your software, you
+should know that, unless you also display the time zone, you can never
+be sure of the time. I cannot remember how many times a developer has
+asked me to <em>fix the time</em> on the server, only to discover that his
+software was printing time in UTC.</p>
+
+<p>At display time, it is okay to deal with partial representation of time
+because the user experience requires so. Just make sure, when debugging,
+to print out the whole set of information, including the time zone,
+otherwise you can never be sure what you're looking at is what you
+actually think it is.</p>
+
+<p>Although a given moment in time is immutable, there is an arbitrary
+number of ways to express it. And we've not even talked about the Julian or
+Indian calendars or stuff like expressing durations!</p>
+
+<p>Let me summarize a few key points to bring home so far:</p>
+
+<ul>
+<li>get to know <a href="http://en.wikipedia.org/wiki/Time_zone">time zones</a> and
+<a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> is your friend</li>
+<li>always print the time zone while debugging</li>
+</ul>
+
+
+<h2>Serialization</h2>
+
+<p>Speaking of software, serialization is a process where you take an
+entity and spell it out in such a way that it can be later entirely
+rebuilt, exactly like the original, by using the spelt out (serialized)
+information.</p>
+
+<p>In the binary world of computers, time is usually serialized and stored
+by using the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a>
+convention. As I'm writing this, my Unix time is <code>1366191727 UTC</code>. That
+is: <code>1366191727</code> seconds have passed since January 1st, 1970 at 00:00
+UTC. Isn't that a pretty clever, consistent and compact way of
+representing a plethora of information, such as <code>April 17 2013 @
+11:42:07am CEST</code>?</p>
+
+<p>Unix time is only another arbitrary representation of a given moment in
+time, although a not very human readable one. But you can take that
+number, write it on a piece of paper, stick it to a carrier pigeon, and
+your recipient would be able to decipher your vital message by simply
+turning to the Internet and visiting a site such as
+<a href="http://www.unixtimestamp.com/">unixtimestamp.com</a>.</p>
+
+<p>Just like you can write that number on a piece of paper and later get
+back the full instant back to life, you can store it in a file or a
+row in your favorite RDMBS. Although you might want to talk to your
+RDBMS using a proper driver and handing it a plain date instance; your
+driver will then take care of the conversion to the underlying database
+serialization format for native time instances.</p>
+
+<p>By storing time using a native format, you get for free the nice
+time formatting, sorting, querying, etc features of your RDBMS, so you
+might want to think twice before storing plain Unix timestamps.</p>
+
+<p>Just make sure you know what timezone your Unix timestamp refers to, or
+you might get confused later at deserialization time.</p>
+
+<p>ISO 8601 is also a serialization favorite. In fact, it is used in the
+<a href="http://www.w3.org/TR/xmlschema-2/#isoformats">XML Schema</a> standard.
+Most xml frameworks are natively able to serialize and deserialize back
+and forth from <code>xs:date</code>, <code>xs:time</code> and <code>xs:dateTime</code> to your
+programming language's native format (and viceversa). Just be careful
+when dealing with partial representations: for instance, if you omit the
+time zone, make sure you agree beforehand on a default one with your
+communicating party (usually UTC or your local time zone if you're both
+in the same one).</p>
+
+<h2>Management</h2>
+
+<p>First of all, if you think you can write your own time management
+software library, or even write a little routine that adds or subtracts
+arbitrary values from the time of the day,
+please allow me to show you the source code for the
+<a href="http://www.docjar.com/html/api/java/util/Date.java.html">java.util.Date</a>
+and
+<a href="http://www.docjar.com/html/api/java/util/GregorianCalendar.java.html">java.util.GregorianCalendar</a>
+classes from JDK 7, respectively weighting 1331 and 3179 lines of code.</p>
+
+<p>Okay, these are probably not the best examples of software routines that
+deal with time, I agree. That's why Java libraries like
+<a href="http://joda-time.sourceforge.net/">Joda Time</a> were written (so you don't have
+to)! In fact, Joda Time has become so popular that it gave birth to
+<a href="http://jcp.org/en/jsr/detail?id=310">JSR-310</a> and is
+<a href="http://www.h-online.com/open/news/item/JSR-310-s-Date-and-Time-API-added-to-JDK-8-1708647.html">now</a>
+<a href="http://www.infoq.com/news/2013/02/java-time-api-jdk-8">part</a> of JDK 8.</p>
+
+<p>Use of popular, well designed and implemented time frameworks will save
+your life. Seriously. Take your time to get familiar with the API of
+your choosing. If you are into Scala, I can recommend
+<a href="https://github.com/nscala-time/nscala-time">nscala-time</a>. And if you
+are into other programming languages, honestly, I have no idea, but ask
+your local guru: she can help.</p>
+
+<h2>Further Resources</h2>
+
+<p>Here are a few useful links I've accumulated over time:</p>
+
+<ul>
+<li><a href="http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">Falsehoods programmers believe about time</a></li>
+<li><a href="http://apiux.com/2013/03/20/5-laws-api-dates-and-times/">The 5 laws of API dates and times</a></li>
+<li><a href="http://derickrethans.nl/storing-date-time-in-database.html">Storing Date/Times in Databases</a></li>
+<li><a href="http://youtu.be/kzprsR2SvrQ">A Short History of the Modern Calendar</a></li>
+<li><a href="http://opensourcehacker.com/2013/03/28/converting-world-timezones-with-duckduckgo-and-wolfram-alpha/">Converting world timezones with DuckDuckGo and Wolfram Alpha from the browser address bar</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[OS X Launchpad Clean Up]]></title>
@@ -90,27 +269,6 @@ $ alias culp='rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KI
 
 
 <p>Buona visione.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Clustering Issues?]]></title>
-    <link href="http://mirkocaserta.com/blog/2012/09/24/clustering-issues/"/>
-    <updated>2012-09-24T14:47:00+02:00</updated>
-    <id>http://mirkocaserta.com/blog/2012/09/24/clustering-issues</id>
-    <content type="html"><![CDATA[<p>The number one culprit for a non working cluster is a misconfigured /etc/hosts file. This is because of how some software implementation announces its availability on the network. Typically, if you have a resolver configured so that the domain name of your local node points to the loopback address, you have a problem.</p>
-
-<p>Some Linux distributions (Ubuntu, I’m looking at you!) ship with an /etc/hosts that looks like this (supposing the hostname is cat and the domain name is foo.bar):</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/etc/hosts </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>127.0.0.1    localhost
-</span><span class='line'>127.0.1.1    cat.foo.bar cat</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>For some reason, a few software implementations use the resolver to infer the address of the node they’re running on, then start sending out messages such as “Hey, I’m available. You can find me at 127.0.1.1”, which is the problem because you want the node to advertise its availability with a real ip address (usually the one that is bound to the main network interface).</p>
-
-<p>The solution is to get rid of the 127.0.1.1 line. You’re welcome.</p>
 ]]></content>
   </entry>
   

@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mirko Caserta</title>
+  <title>An Introduction to Time Representation, Serialization and Management in Software - Mirko Caserta</title>
   <meta name="author" content="Mirko Caserta">
 
   
@@ -20,7 +20,7 @@ simple as time &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mirkocaserta.com/">
+  <link rel="canonical" href="http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mirko Caserta" type="application/atom+xml">
@@ -75,15 +75,12 @@ simple as time &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/04/15/time-representation-serialization-and-management/">An Introduction to Time Representation, Serialization and Management in Software</a></h1>
+      <h1 class="entry-title">An Introduction to Time Representation, Serialization and Management in Software</h1>
     
     
       <p class="meta">
@@ -106,7 +103,7 @@ simple as time &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>Most issues in software development usually arise from poor,
+<div class="entry-content"><p>Most issues in software development usually arise from poor,
 inconsistent knowledge of the domain at hand. A topic apparently as
 simple as time representation, serialization and management can easily
 cause a number of problems both to the neophyte and to the experienced
@@ -278,75 +275,16 @@ your local guru: she can help.</p>
 </ul>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/09/os-x-launchpad-cleanup/">OS X Launchpad Clean Up</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Mirko Caserta</span></span>
 
-<time datetime="2013-03-09T14:29:00+01:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I quite like OS X Launchpad. The only problem is it gets quite messy
-after a while. The way I fix it is by spraying napalm over its cache and
-restarting the dock:</p>
-
-<figure class='code'><figcaption><span>Clean up Launchpad</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm ~/Library/Application<span class="se">\ </span>Support/Dock/*.db <span class="o">&amp;&amp;</span> killall -KILL Dock
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I use this command so often that I have an alias for it:</p>
-
-<figure class='code'><figcaption><span>Clean up Launchpad shell alias</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">alias </span><span class="nv">culp</span><span class="o">=</span><span class="s1">&#39;rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KILL Dock&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The <code>alias</code> command should work both in bash and zsh. My mnemonic for
-<code>culp</code> is Clean Up Launch Pad.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/23/sbt-bom-example/">SBT Company Wide Settings Example</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -358,310 +296,49 @@ restarting the dock:</p>
   
 
 
-<time datetime="2013-02-23T14:29:00+01:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I know it looks like I haven&#8217;t been posting much lately. Anyway, I&#8217;m studying <a href="http://www.scala-lang.org/">Scala</a> programming and, among other things, I came upon the awesome <a href="http://www.scala-sbt.org/">Simple Build Tool</a> (SBT for short).</p>
-
-<p>SBT looks like a mighty and untamable beast at first glance. But, after a closer look and a patient walkthrough of the <a href="http://www.scala-sbt.org/release/docs/index.html">online docs</a> and the practical examples, I must say it is an awesome tool, very worth the learning effort.</p>
-
-<p>One of the first issues I had to face in SBT was implementing what I was previously doing with a <a href="http://code.google.com/p/m4enterprise/wiki/CorporatePOM">Maven Corporate POM</a>. In other words, I needed a mechanism to control the master build settings for all of a company&#8217;s artifacts.</p>
-
-<p>I ended up publishing an <a href="https://github.com/mcaserta/sbt-bom-example" title="SBT Company Wide Settings Example">SBT Company Wide Settings Example project on GitHub</a>. There is an extensive <a href="https://github.com/mcaserta/sbt-bom-example/blob/master/README.markdown">readme</a> that explains how I am doing it.</p>
-
-<p>As usual, feedback is welcome.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2013-04-15T14:19:00+02:00" pubdate data-updated="true">Apr 15<span>th</span>, 2013</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/31/hello-scala-world/">Hello Scala World!</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/computer/'>computer</a>, <a class='category' href='/blog/categories/posts-in-english/'>posts in english</a>, <a class='category' href='/blog/categories/software/'>software</a>, <a class='category' href='/blog/categories/software-development/'>software development</a>, <a class='category' href='/blog/categories/time/'>time</a>
+  
+</span>
 
 
-<time datetime="2012-10-31T11:57:00+01:00" pubdate data-updated="true">Oct 31<span>st</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve just published an <a href="https://github.com/mcaserta/hello-scala-world" title="Hello Scala World!">Hello Scala World! project on GitHub</a> that you can use to quickly setup a Scala hacking environment. This is particularly useful if you run Intellij Idea with the Scala plugin since simply opening the pom as a project will get you all the comforts you would expect in a modern ide.</p>
-
-<p>You also get support for running <a href="http://etorreborre.github.com/specs2/">specs2 specifications</a>.</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management/" data-via="mirkocaserta" data-counturl="http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/30/video-tutorial/">Video Tutorial</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-30T13:47:00+01:00" pubdate data-updated="true">Oct 30<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Dallo scorso settembre faccio parte di <a href="http://swat.nexse.com" title="Nexse SWAT Team">un gruppo</a> interno all&#8217;azienda per cui lavoro in cui ci occupiamo di architettura del software. Uno dei nostri compiti è quello di individuare strumenti e tecnologie su cui standardizzare il processo di produzione del software e contribuirne alla diffusione.</p>
-
-<p>Uno dei modi per diffondere innovazione è rappresentato dai nostri <a href="https://vimeo.com/nexse/">video tutorial</a>. Ora non saremo né gli Oliver Stone dei video tutorial, né gli Alan Turing dell&#8217;informatica ma, per quanto ne sappiamo, non ci sono altre aziende in Italia che pubblicano gratuitamente video in cui vengono spiegati tecnologie e strumenti realmente impiegati nel lavoro quotidiano di produzione di software professionale. Personalmente credo sia una iniziativa meritevole se non altro di maggiore pubblicità sui social media.</p>
-
-<p>Se guardi uno dei nostri video e lo trovi utile, segnalalo ai tuoi amici, colleghi, a voce, sui social network, ecc.</p>
-
-<p>Per praticità, ecco un elenco dei video tutorial pubblicati finora:</p>
-
-<ul>
-<li>Introduzione a JavaScript per Single Page Application: <a href="http://vimeo.com/56987148">prima</a>, <a href="http://vimeo.com/57212911">seconda</a> e <a href="http://vimeo.com/57379338">terza</a> puntata</li>
-<li>Introduzione a Maven: <a href="https://vimeo.com/42969878">prima</a>, <a href="https://vimeo.com/43922430">seconda</a> e <a href="https://vimeo.com/51743348">terza</a> puntata</li>
-<li><a href="https://vimeo.com/51150779">Introduzione a Spring Data</a></li>
-<li><a href="https://vimeo.com/38038686">Introduzione a Spring Roo</a></li>
-<li><a href="https://vimeo.com/39395290">Single Page Application con ExtJS</a></li>
-<li><a href="https://vimeo.com/35209134">Java Debugging con Intellij Idea</a></li>
-<li><a href="https://vimeo.com/30879185">Continuous Integration e Code Metrics con Jenkins e Sonar</a></li>
-</ul>
-
-
-<p>Buona visione.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/blog/2013/03/09/os-x-launchpad-cleanup/" title="Previous Post: OS X Launchpad Clean Up">&laquo; OS X Launchpad Clean Up</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/24/clustering-issues/">Clustering Issues?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-24T14:47:00+02:00" pubdate data-updated="true">Sep 24<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>The number one culprit for a non working cluster is a misconfigured /etc/hosts file. This is because of how some software implementation announces its availability on the network. Typically, if you have a resolver configured so that the domain name of your local node points to the loopback address, you have a problem.</p>
-
-<p>Some Linux distributions (Ubuntu, I’m looking at you!) ship with an /etc/hosts that looks like this (supposing the hostname is cat and the domain name is foo.bar):</p>
-
-<figure class='code'><figcaption><span>/etc/hosts </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>127.0.0.1    localhost
-</span><span class='line'>127.0.1.1    cat.foo.bar cat</span></code></pre></td></tr></table></div></figure>
-
-
-<p>For some reason, a few software implementations use the resolver to infer the address of the node they’re running on, then start sending out messages such as “Hey, I’m available. You can find me at 127.0.1.1”, which is the problem because you want the node to advertise its availability with a real ip address (usually the one that is bound to the main network interface).</p>
-
-<p>The solution is to get rid of the 127.0.1.1 line. You’re welcome.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/27/spring-crypto-utils-1.3.0/">Spring Crypto Utils 1.3.0</a></h1>
-    
-    
-      <p class="meta">
-        
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-27T14:47:00+02:00" pubdate data-updated="true">Aug 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I’ve released a new version of Spring Crypto Utils. The project now has a gorgeous, shiny, sleek, new website on the <a href="http://springcryptoutils.com" title="Spring Crypto Utils">springcryptoutils.com</a> domain. The website is made possible thanks to the kind folks at <a href="https://github.com/" title="GitHub">GitHub</a> and their <a href="http://pages.github.com/" title="GitHub Pages">GitHub pages</a> hosting facility.</p>
-
-<p>Please read the notes in the <a href="http://springcryptoutils.com/changelog.html" title="Spring Crypto Utils: ChangeLog">changelog</a> if you’re upgrading.</p>
-
-<p>I must say moving to GitHub was a smart move since contributing to the project is very much easier now thanks to git pull requests. I would like to thank Chad Johnston and Martin Bosak for their contributions: respectively, <a href="https://github.com/mcaserta/spring-crypto-utils/commit/b0c7e8dab8c3f9ead869055aa460feb0dc5af4f6">the certificate element</a> and the <a href="https://github.com/mcaserta/spring-crypto-utils/commit/15f305e522bd3c85eec7cc46a50e18385f324b9e">provider attribute</a>.</p>
-
-<p>I hope users will find the documentation easier to read. Here is an example regarding <a href="http://springcryptoutils.com/signature-m.html">digital signatures with runtime selection of multiple keys</a>.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Carl Sagan, Lo Scetticismo E l&#8217;Ingegneria Del Software</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-25T14:47:00+02:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ieri sera leggevo <a href="http://www.brainpickings.org/index.php/2012/05/23/carl-sagan-the-burden-of-skepticism/" title="Carl Sagan on Mastering the Vital Balance of Skepticism and Openness">questo articolo</a> in cui viene citato Carl Sagan, probabilmente il migliore divulgatore scientifico mai vissuto sul pianeta Terra.</p>
-
-<p>Sagan dice, con parole molto più efficaci delle mie, che esiste un delicato equilibrio fra scetticismo ed apertura mentale nell’affrontare ipotesi e idee. Leggendo il suo ragionamento mi sono reso conto che questa faccenda del giusto equilibrio è applicabile a tanti campi della conoscenza umana, fra cui l’Ingegneria del Software.</p>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/05/25/sagan-scetticismo-ingegneria-software/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/">Cosa Crea Una Buona Cultura Ingegneristica?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-20T14:47:00+02:00" pubdate data-updated="true">May 20<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Stavo leggendo <a href="http://www.quora.com/What-makes-a-good-engineering-culture/answer/Edmond-Lau" title="What makes a good engineering culture?">la risposta di Edmond Lau’s alla domanda “Cosa crea una buona cultura ingegneristica?”</a></p>
-
-<p>Tutti i punti esposti sono molto interessanti e validi. Tuttavia, nella mia esperienza, due punti sono prerequisito essenziale per il senso più ampio del discorso:</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/05/20/cosa-crea-una-buona-cultura-ingegneristica/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
   <h1>About</h1>
-  <p>Welcome to my digital home. My name is Mirko and I&#8217;m a software craftsman based in Rome, Italy.</p>
+  <p>Welcome to my digital home. My name is Mirko and I'm a software craftsman based in Rome, Italy.</p>
 </section>
 <section>
   <h1>Recent Posts</h1>
@@ -693,7 +370,7 @@ restarting the dock:</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -710,7 +387,7 @@ restarting the dock:</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/mcaserta">@mcaserta</a> on GitHub
@@ -740,6 +417,7 @@ restarting the dock:</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -754,7 +432,10 @@ restarting the dock:</p>
       var disqus_shortname = 'mcaserta';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management/';
+        var disqus_url = 'http://mirkocaserta.com/blog/2013/04/15/time-representation-serialization-and-management/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

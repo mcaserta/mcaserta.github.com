@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: posts in english | Mirko Caserta]]></title>
-  <link href="http://mirkocaserta.com/blog/categories/posts-in-english/atom.xml" rel="self"/>
+  <title><![CDATA[Category: software development | Mirko Caserta]]></title>
+  <link href="http://mirkocaserta.com/blog/categories/software-development/atom.xml" rel="self"/>
   <link href="http://mirkocaserta.com/"/>
   <updated>2013-04-17T13:20:08+02:00</updated>
   <id>http://mirkocaserta.com/</id>
@@ -189,79 +189,6 @@ your local guru: she can help.</p>
 <li><a href="http://opensourcehacker.com/2013/03/28/converting-world-timezones-with-duckduckgo-and-wolfram-alpha/">Converting world timezones with DuckDuckGo and Wolfram Alpha from the browser address bar</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OS X Launchpad Clean Up]]></title>
-    <link href="http://mirkocaserta.com/blog/2013/03/09/os-x-launchpad-cleanup/"/>
-    <updated>2013-03-09T14:29:00+01:00</updated>
-    <id>http://mirkocaserta.com/blog/2013/03/09/os-x-launchpad-cleanup</id>
-    <content type="html"><![CDATA[<p>I quite like OS X Launchpad. The only problem is it gets quite messy
-after a while. The way I fix it is by spraying napalm over its cache and
-restarting the dock:</p>
-
-<p><code>bash Clean up Launchpad
-$ rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KILL Dock
-</code></p>
-
-<p>I use this command so often that I have an alias for it:</p>
-
-<p><code>bash Clean up Launchpad shell alias
-$ alias culp='rm ~/Library/Application\ Support/Dock/*.db &amp;&amp; killall -KILL Dock'
-</code></p>
-
-<p>The <code>alias</code> command should work both in bash and zsh. My mnemonic for
-<code>culp</code> is Clean Up Launch Pad.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SBT Company Wide Settings Example]]></title>
-    <link href="http://mirkocaserta.com/blog/2013/02/23/sbt-bom-example/"/>
-    <updated>2013-02-23T14:29:00+01:00</updated>
-    <id>http://mirkocaserta.com/blog/2013/02/23/sbt-bom-example</id>
-    <content type="html"><![CDATA[<p>I know it looks like I haven't been posting much lately. Anyway, I'm studying <a href="http://www.scala-lang.org/">Scala</a> programming and, among other things, I came upon the awesome <a href="http://www.scala-sbt.org/">Simple Build Tool</a> (SBT for short).</p>
-
-<p>SBT looks like a mighty and untamable beast at first glance. But, after a closer look and a patient walkthrough of the <a href="http://www.scala-sbt.org/release/docs/index.html">online docs</a> and the practical examples, I must say it is an awesome tool, very worth the learning effort.</p>
-
-<p>One of the first issues I had to face in SBT was implementing what I was previously doing with a <a href="http://code.google.com/p/m4enterprise/wiki/CorporatePOM">Maven Corporate POM</a>. In other words, I needed a mechanism to control the master build settings for all of a company's artifacts.</p>
-
-<p>I ended up publishing an <a href="https://github.com/mcaserta/sbt-bom-example" title="SBT Company Wide Settings Example">SBT Company Wide Settings Example project on GitHub</a>. There is an extensive <a href="https://github.com/mcaserta/sbt-bom-example/blob/master/README.markdown">readme</a> that explains how I am doing it.</p>
-
-<p>As usual, feedback is welcome.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello Scala World!]]></title>
-    <link href="http://mirkocaserta.com/blog/2012/10/31/hello-scala-world/"/>
-    <updated>2012-10-31T11:57:00+01:00</updated>
-    <id>http://mirkocaserta.com/blog/2012/10/31/hello-scala-world</id>
-    <content type="html"><![CDATA[<p>I've just published an <a href="https://github.com/mcaserta/hello-scala-world" title="Hello Scala World!">Hello Scala World! project on GitHub</a> that you can use to quickly setup a Scala hacking environment. This is particularly useful if you run Intellij Idea with the Scala plugin since simply opening the pom as a project will get you all the comforts you would expect in a modern ide.</p>
-
-<p>You also get support for running <a href="http://etorreborre.github.com/specs2/">specs2 specifications</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Clustering Issues?]]></title>
-    <link href="http://mirkocaserta.com/blog/2012/09/24/clustering-issues/"/>
-    <updated>2012-09-24T14:47:00+02:00</updated>
-    <id>http://mirkocaserta.com/blog/2012/09/24/clustering-issues</id>
-    <content type="html"><![CDATA[<p>The number one culprit for a non working cluster is a misconfigured /etc/hosts file. This is because of how some software implementation announces its availability on the network. Typically, if you have a resolver configured so that the domain name of your local node points to the loopback address, you have a problem.</p>
-
-<p>Some Linux distributions (Ubuntu, I’m looking at you!) ship with an /etc/hosts that looks like this (supposing the hostname is cat and the domain name is foo.bar):</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>/etc/hosts </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>127.0.0.1    localhost
-</span><span class='line'>127.0.1.1    cat.foo.bar cat</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>For some reason, a few software implementations use the resolver to infer the address of the node they’re running on, then start sending out messages such as “Hey, I’m available. You can find me at 127.0.1.1”, which is the problem because you want the node to advertise its availability with a real ip address (usually the one that is bound to the main network interface).</p>
-
-<p>The solution is to get rid of the 127.0.1.1 line. You’re welcome.</p>
 ]]></content>
   </entry>
   
