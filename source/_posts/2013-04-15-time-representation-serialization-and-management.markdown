@@ -20,7 +20,7 @@ In this post, we'll see that there's no need to be a
 [Time Lord](http://en.wikipedia.org/wiki/Time_Lord) to grasp the
 very simple few concepts needed not to incur into time management hell.
 
-{% img images/blog/time.jpeg 500 341 %}
+{% img /images/blog/time.jpeg 500 341 %}
 
 ## Representation
 
